@@ -6,7 +6,7 @@ import { ProductData } from "./ProductData";
 
 const ProductOverview = () => {
   const [ProductActive, setProductActive] = useState({
-    ProductBjrActive: false,
+    ProductBjrActive: true,
     ProductCapKretekActive: false,
   });
 
