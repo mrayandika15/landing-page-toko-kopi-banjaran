@@ -1,4 +1,4 @@
-import { SectionHeader, Video } from "../containers";
+import { ProductOverview, SectionHeader, Video } from "../containers";
 import { Main } from "../layouts";
 
 const index = () => {
@@ -6,6 +6,7 @@ const index = () => {
     <Main>
       <Video />
       <SectionHeader />
+      <ProductOverview />
     </Main>
   );
 };
