@@ -1,15 +1,5 @@
-import {
-  Button,
-  Center,
-  Divider,
-  Flex,
-  Image,
-  Slide,
-  SlideFade,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
-import { useState, useEffect } from "react/cjs/react.development";
+import { Button, Flex, Image, SlideFade, Text } from "@chakra-ui/react";
+import { useState } from "react";
 import { ProductName } from "../../components";
 import ToggleButton from "../../components/ToggleButton";
 import { ProductData } from "./ProductData";
