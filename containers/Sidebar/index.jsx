@@ -11,6 +11,8 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
+import NextLink from "next/link";
+
 import { AiOutlineInstagram } from "react-icons/ai";
 
 import { BsWhatsapp } from "react-icons/bs";
@@ -21,15 +23,19 @@ const Sidebar = ({ isOpen, onClose }) => {
   const LinkData = [
     {
       name: "Tentang Kami",
+      link: "/#about",
     },
     {
       name: "Produk Kami",
+      link: "/#product",
     },
     {
       name: "Lokasi Toko",
+      link: "/#location",
     },
     {
       name: "Promo",
+      link: "/promo",
     },
   ];
 
@@ -40,16 +46,18 @@ const Sidebar = ({ isOpen, onClose }) => {
         <DrawerBody display="flex" alignItems="center">
           <Flex direction="column" gap="5">
             {LinkData.map((item, index) => (
-              <Link
-                key={index}
-                href="#"
-                color="white"
-                fontSize="4xl"
-                fontWeight="bold"
-                _hover={{ borderBottom: "1px solid white" }}
-              >
-                {item.name}
-              </Link>
+              <NextLink href={item.link} key={index}>
+                <Link
+                  href="#"
+                  color="white"
+                  fontSize="4xl"
+                  fontWeight="bold"
+                  _hover={{ borderBottom: "1px solid white" }}
+                  onClick={onClose}
+                >
+                  {item.name}
+                </Link>
+              </NextLink>
             ))}
           </Flex>
         </DrawerBody>

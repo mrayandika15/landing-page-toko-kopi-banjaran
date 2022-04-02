@@ -1,12 +1,18 @@
-import { ProductOverview, SectionHeader, Video } from "../containers";
+import {
+  LocationDetails,
+  ProductOverview,
+  SectionHeader,
+  Video,
+} from "../containers";
 import { Main } from "../layouts";
 
 const index = () => {
   return (
-    <Main>
+    <Main navbarColor="white" isHomePage>
       <Video />
       <SectionHeader />
       <ProductOverview />
+      <LocationDetails />
     </Main>
   );
 };
