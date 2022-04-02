@@ -5,19 +5,28 @@ import { Image } from "@chakra-ui/react";
 import style from "./Navbar.module.css";
 import Sidebar from "../Sidebar";
 
-const NavMobile = () => {
+const NavMobile = ({ color }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const iconColor = [];
+
+  if (color === "black") {
+    iconColor.push(style.black);
+  }
+
+  if (color === "white") {
+    iconColor.push(style.white);
+  }
 
   return (
     <HStack
       justify="space-between"
       px="12"
       h="16"
-      mt="4"
       visibility={["visible", "hidden"]}
     >
       <Box cursor="pointer">
-        <GiHamburgerMenu className={style.icon} onClick={onOpen} />
+        <GiHamburgerMenu className={iconColor} onClick={onOpen} />
       </Box>
 
       <Box>

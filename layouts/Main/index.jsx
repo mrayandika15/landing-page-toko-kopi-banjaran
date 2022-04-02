@@ -1,13 +1,13 @@
-import { Stack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Footer, Navbar } from "../../containers";
 
-const Main = ({ children }) => {
+const Main = ({ children, navbarColor, isHomePage }) => {
   return (
-    <Stack direction="column">
-      <Navbar />
+    <Flex direction="column">
+      <Navbar color={navbarColor} isHomePage={isHomePage} />
       {children}
       <Footer />
-    </Stack>
+    </Flex>
   );
 };
 

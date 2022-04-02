@@ -6,3 +6,30 @@
 .icon:hover {
   color: #fff;
 }
+
+.white {
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+.white:hover {
+  color: #fff;
+}
+
+.black {
+  transition: all 0.3s ease-in-out;
+  color: #000;
+}
+
+.black:hover {
+  color: #000;
+}
+
+.link {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
