@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 import style from "./Navbar.module.css";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 
 const NavDesktop = ({ color, isHomePage }) => {
   const logo = [];

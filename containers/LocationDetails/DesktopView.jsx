@@ -7,6 +7,7 @@ import {
   Link,
   Image,
   Stack,
+  Button,
 } from "@chakra-ui/react";
 
 const DesktopView = ({ resource }) => {
@@ -34,6 +35,19 @@ const DesktopView = ({ resource }) => {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
+            <Flex justifyContent="end">
+              <Button
+                variant="primary"
+                isActive
+                onClick={() =>
+                  window.open(
+                    "https://www.google.com/maps?ll=-7.047218,107.586767&z=16&t=m&hl=id&gl=ID&mapclient=embed&cid=2275141630741737206"
+                  )
+                }
+              >
+                {resource.buttonName}
+              </Button>
+            </Flex>
           </Stack>
         </VStack>
 

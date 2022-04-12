@@ -8,6 +8,8 @@ const ToggleButton = ({ Active, setActive }) => {
           onClick={() =>
             setActive({ ProductBjrActive: true, ProductCapKretekActive: false })
           }
+          variant="primary"
+          isActive={Active.ProductBjrActive}
         >
           Kopi BJR
         </Button>
@@ -15,6 +17,8 @@ const ToggleButton = ({ Active, setActive }) => {
           onClick={() =>
             setActive({ ProductBjrActive: false, ProductCapKretekActive: true })
           }
+          variant="primary"
+          isActive={Active.ProductCapKretekActive}
         >
           Kopi Cap Kretek
         </Button>
