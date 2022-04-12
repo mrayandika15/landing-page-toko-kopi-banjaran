@@ -7,6 +7,7 @@ import {
   Text,
   Link,
 } from "@chakra-ui/react";
+import { IconContext } from "react-icons";
 
 import { AiOutlineInstagram } from "react-icons/ai";
 
@@ -79,9 +80,11 @@ const Footer = () => {
               Temukan Kami
             </Text>
             <Flex gap="2" mt="2">
-              <AiOutlineInstagram />
-              <BsWhatsapp />
-              <GoLocation />
+              <IconContext.Provider value={{ size: "20px" }}>
+                <AiOutlineInstagram />
+                <BsWhatsapp />
+                <GoLocation />
+              </IconContext.Provider>
             </Flex>
           </Flex>
         </Flex>

@@ -42,7 +42,9 @@ const MobileView = ({ resource }) => {
       </Stack>
 
       <Center py="20px">
-        <Button>{resource.button}</Button>
+        <Button variant="primary" isActive>
+          {resource.buttonName}
+        </Button>
       </Center>
     </VStack>
   );

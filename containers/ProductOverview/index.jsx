@@ -152,7 +152,9 @@ const ProductOverview = () => {
             )}
 
             <Flex justify={["flex-end", "flex-start"]} w="full" py="20px">
-              <Button onClick={handleClickDetail}>Selegkapnya</Button>
+              <Button onClick={handleClickDetail} variant="primary" isActive>
+                Selegkapnya
+              </Button>
             </Flex>
           </Flex>
         </Flex>

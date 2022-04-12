@@ -74,6 +74,7 @@ const ProductDetails = ({
                 <Button
                   onClick={() => handleClick(index)}
                   isActive={index === indexArray}
+                  variant="primary"
                 >
                   {data.type}
                 </Button>
@@ -84,7 +85,9 @@ const ProductDetails = ({
             {resource[indexArray]?.nameDetail}
           </Text>
           <Text pl="5px">{resource[indexArray]?.detailProduct}</Text>
-          <Button>Beli Produk ini</Button>
+          <Button variant="primary" isActive>
+            Beli Produk ini
+          </Button>
         </VStack>
       </Flex>
     </Center>
