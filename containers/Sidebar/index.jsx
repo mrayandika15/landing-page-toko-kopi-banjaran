@@ -13,11 +13,9 @@ import {
 
 import NextLink from "next/link";
 
-import { AiOutlineInstagram } from "react-icons/ai";
+import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 
-import { BsWhatsapp } from "react-icons/bs";
-
-import { GoLocation } from "react-icons/go";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const Sidebar = ({ isOpen, onClose }) => {
   const LinkData = [
@@ -41,7 +39,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
   return (
     <Drawer placement="left" isOpen={isOpen} onClose={onClose} size="full">
-      <DrawerContent bg="black">
+      <DrawerContent bgImg="/assets/img/UI/BG_MobileNavigation.png">
         <DrawerCloseButton color="white" />
         <DrawerBody display="flex" alignItems="center">
           <Flex direction="column" gap="5">
@@ -84,9 +82,9 @@ const Sidebar = ({ isOpen, onClose }) => {
             </Link>
 
             <Flex color="white" gap="3" h="10" alignItems="center">
-              <AiOutlineInstagram />
-              <BsWhatsapp />
-              <GoLocation />
+              <IoLogoInstagram />
+              <IoLogoWhatsapp />
+              <HiOutlineLocationMarker />
             </Flex>
           </Flex>
         </DrawerFooter>

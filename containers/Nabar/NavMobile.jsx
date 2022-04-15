@@ -10,20 +10,25 @@ const NavMobile = ({ color }) => {
 
   const iconColor = [];
 
+  const imageSrc = [];
+
   if (color === "black") {
     iconColor.push(style.black);
+    imageSrc.push("/assets/img/Logo_Black.png");
   }
 
   if (color === "white") {
+    imageSrc.push("/assets/img/Logo.png");
     iconColor.push(style.white);
   }
 
   return (
     <HStack
       justify="space-between"
-      px="12"
       h="16"
       visibility={["visible", "hidden"]}
+      mt="20px"
+      px="25px"
     >
       <Box cursor="pointer">
         <GiHamburgerMenu className={iconColor} onClick={onOpen} />
@@ -31,15 +36,15 @@ const NavMobile = ({ color }) => {
 
       <Box>
         <Image
-          src="/assets/img/Logo.png"
+          src={imageSrc}
           alt="logo"
-          width="166px"
-          height="43px"
+          width="140px"
+          height="auto"
           objectFit="contain"
         />
       </Box>
 
-      <Box />
+      <Box h="auto" w="10px" />
       <Sidebar isOpen={isOpen} onClose={onClose} />
     </HStack>
   );

@@ -1,4 +1,4 @@
-import { Button, Flex, Image, SlideFade, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, SlideFade, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { ProductName } from "../../components";
 import ToggleButton from "../../components/ToggleButton";
@@ -37,14 +37,29 @@ const ProductOverview = () => {
         justify={["center", "center"]}
         alignItems={["center", "center"]}
         px="20px"
-        background="/assets/img/UI/Background_Produk_Kami.png"
-        bgImg="/assets/img/UI/Background_Produk_Kami.png"
-        backgroundSize="cover"
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
         h="fit-content"
         w="full"
+        position="relative"
       >
+        <Box
+          bgImg="/assets/img/UI/Background_Produk_Kami.png"
+          backgroundSize="cover"
+          backgroundPosition="center"
+          backgroundRepeat="no-repeat"
+          width="100%"
+          height="100%"
+          position="absolute"
+          zIndex="hide"
+          display={["none", "block"]}
+        />
+        <Box
+          bgImg="/assets/img/UI/BGMobile_CapKretek.png"
+          width="100%"
+          height="100%"
+          position="absolute"
+          zIndex="hide"
+          display={["block", "none"]}
+        />
         <Text
           fontSize={["60px"]}
           textDecoration="underline"
