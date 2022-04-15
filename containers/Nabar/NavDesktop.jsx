@@ -31,7 +31,7 @@ const NavDesktop = ({ color, isHomePage }) => {
       visibility={["hidden", "visible"]}
     >
       <Flex w="880px" h="full" justify="space-between" position="relative">
-        <HStack color={TextColor} gap="2">
+        <HStack color={TextColor} gap="5" mt="31px" ml="32px">
           {isHomePage && (
             <>
               <Link
@@ -72,7 +72,7 @@ const NavDesktop = ({ color, isHomePage }) => {
           )}
         </HStack>
 
-        <HStack color={TextColor} gap="2">
+        <HStack color={TextColor} gap="5" mt="31px" mr="78px">
           {isHomePage && (
             <Link
               activeClass="active"
@@ -101,11 +101,13 @@ const NavDesktop = ({ color, isHomePage }) => {
         <Image
           src={logo}
           position="absolute"
-          w="316px"
-          h="81px"
+          w="250px"
+          h="auto"
           left="0"
           right="0"
+          top="5px"
           margin="auto"
+          cursor={"pointer"}
           onClick={() => router.push("/")}
         />
       </Flex>

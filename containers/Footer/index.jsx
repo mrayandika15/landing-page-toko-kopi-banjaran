@@ -9,17 +9,19 @@ import {
 } from "@chakra-ui/react";
 import { IconContext } from "react-icons";
 
-import { AiOutlineInstagram } from "react-icons/ai";
+import {
+  IoLogoInstagram,
+  IoLogoWhatsapp,
+  IoLocationOutline,
+} from "react-icons/io5";
 
-import { BsWhatsapp } from "react-icons/bs";
-
-import { GoLocation } from "react-icons/go";
+import { HiOutlineLocationMarker } from "react-icons/hi";
 
 const Footer = () => {
   return (
     <Flex w="full" h="fit-content" direction="column">
       <Center w="full">
-        <Divider w={["full", "450px"]} variant="solid" />
+        <Flex w="full" mx="45px" h="2px" bg="black" />
       </Center>
 
       <Flex direction={["column", "row"]} w="full" h="fit-content" p="4">
@@ -32,9 +34,9 @@ const Footer = () => {
           />
           <Image
             src="/assets/img/Logo_Black.png"
-            w="341.44px"
-            h="113.66px"
             display={["none", "flex"]}
+            w="441.44px"
+            h="auto"
           />
 
           <Text fontSize={["15.42", "15.83"]} w="341.44px" textAlign="justify">
@@ -52,38 +54,30 @@ const Footer = () => {
             justify={["flex-start", "center"]}
           >
             <Flex direction="column">
-              <Text fontSize={["14.63", "22.43"]} fontWeight="semibold">
+              <Text fontSize={["14.63", "2xl"]} fontWeight="semibold">
                 Explore
               </Text>
-              <Link fontSize={["10.97", "13.83"]} textDecoration="underline">
-                Tentang Kami
-              </Link>
-              <Link fontSize={["10.97", "13.83"]} textDecoration="underline">
-                Promo
-              </Link>
+              <Link fontSize={["10.97", "lg"]}>Tentang Kami</Link>
+              <Link fontSize={["10.97", "lg"]}>Promo</Link>
             </Flex>
             <Flex direction="column">
-              <Text fontSize={["14.63", "22.43"]} fontWeight="semibold">
+              <Text fontSize={["14.63", "2xl"]} fontWeight="semibold">
                 Toko
               </Text>
-              <Link fontSize={["10.97", "13.83"]} textDecoration="underline">
-                Produk
-              </Link>
-              <Link fontSize={["10.97", "13.83"]} textDecoration="underline">
-                Lokasi Toko
-              </Link>
+              <Link fontSize={["10.97", "lg"]}>Produk</Link>
+              <Link fontSize={["10.97", "lg"]}>Lokasi Toko</Link>
             </Flex>
           </Flex>
 
           <Flex direction="column" mt="4" w="full">
-            <Text fontSize={["14.63", "22.43"]} fontWeight="semibold">
+            <Text fontSize={["14.63", "2xl"]} fontWeight="semibold">
               Temukan Kami
             </Text>
             <Flex gap="2" mt="2">
               <IconContext.Provider value={{ size: "20px" }}>
-                <AiOutlineInstagram />
-                <BsWhatsapp />
-                <GoLocation />
+                <IoLogoInstagram />
+                <IoLogoWhatsapp />
+                <HiOutlineLocationMarker />
               </IconContext.Provider>
             </Flex>
           </Flex>

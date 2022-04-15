@@ -12,14 +12,17 @@ import {
 
 const DesktopView = ({ resource }) => {
   return (
-    <VStack display={["none", "flex"]}>
-      <Center>
-        <Text fontSize={["30"]} textDecoration="underline" fontWeight="bold">
-          {resource.header}
-        </Text>
-      </Center>
+    <VStack display={["none", "flex"]} py="25px">
       <HStack justify={"center"} px="10px">
         <VStack w="full">
+          <Text
+            fontSize={["60px"]}
+            textDecoration="underline"
+            fontWeight="bold"
+          >
+            {resource.header}
+          </Text>
+
           <Flex gap="10px">
             <Image src="/assets/img/LogoWithoutImage.png" w="260px" h="68px" />
             <Text fontSize={"md"}>
@@ -51,7 +54,7 @@ const DesktopView = ({ resource }) => {
           </Stack>
         </VStack>
 
-        <Image src={resource.image} w={["600px"]} h={["full"]} />
+        <Image src={resource.image} w={["680px"]} h={["full"]} />
       </HStack>
     </VStack>
   );

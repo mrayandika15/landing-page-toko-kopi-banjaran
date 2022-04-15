@@ -2,7 +2,7 @@ import { Box, Button, Flex } from "@chakra-ui/react";
 
 const ToggleButton = ({ Active, setActive }) => {
   return (
-    <Box p="8px" borderWidth="1px" background="white" mt="14px">
+    <Box p="8px" borderWidth="1px" background="white" mt="30px">
       <Flex direction="row" gap="2">
         <Button
           onClick={() =>

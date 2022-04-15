@@ -748,6 +748,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/pt-serif@^4.5.5":
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/pt-serif/-/pt-serif-4.5.5.tgz#bfb5ea6573b9719ac7554c2ad3fb09559102c9c1"
+  integrity sha512-jQvgoVLyrufK/a/wkCRRXawlPl9NOGNmAmxPrTtnBf4YgI4ysQPbxQkcgWsF9XyDayDxPmrvfGtWmOJ+Gaa54g==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"

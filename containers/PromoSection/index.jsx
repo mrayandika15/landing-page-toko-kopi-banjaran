@@ -9,17 +9,25 @@ const PromoSection = ({ resource }) => {
         alignContent={["center", "start"]}
         w={["full", "1020px"]}
       >
-        <Image src={resource?.image} display={["none", "block"]} />
+        <Image
+          src={resource?.image}
+          display={["none", "block"]}
+          w="420px"
+          h="auto"
+        />
         <VStack align="start" justify="center">
           <Text
-            fontSize={["xl", "2xl"]}
-            fontWeight="semibold"
-            align={["center"]}
+            fontSize={["xl", "5xl"]}
+            fontWeight="bold"
+            align={["left"]}
             w={["full", "auto"]}
           >
-            {resource?.header}
+            Selamat Datang <br />
+            Di Toko Kopi Banjaran
           </Text>
-          <Text align={["center", "start"]}>{resource?.subHeader}</Text>
+          <Text align={["center", "start"]} fontStyle="italic">
+            {resource?.subHeader}
+          </Text>
           <Flex
             direction={["column", "row"]}
             gap="6px"

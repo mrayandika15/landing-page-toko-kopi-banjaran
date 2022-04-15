@@ -1,9 +1,17 @@
+import { Image } from "@chakra-ui/react";
 import { ProductDetails } from "../containers";
 import { Main } from "../layouts";
 
 const ProductBjr = ({ data }) => {
   return (
     <Main navbarColor="black" isHomePage={false}>
+      <Image
+        src="assets/img/UI/BJRBackground.png"
+        position="absolute"
+        inset="0px"
+        height="100%"
+        width="100%"
+      />
       <ProductDetails
         resource={data?.detail}
         image={data?.img}

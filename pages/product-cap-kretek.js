@@ -1,9 +1,17 @@
 import { ProductDetails } from "../containers";
 import { Main } from "../layouts";
+import { Image } from "@chakra-ui/react";
 
 const CapKretek = ({ data }) => {
   return (
     <Main navbarColor="black" isHomePage={false}>
+      <Image
+        src="/assets/img/UI/Background_Produk_Kami.png"
+        position="absolute"
+        inset="0px"
+        height="100%"
+        width="100%"
+      />
       <ProductDetails
         resource={data?.detail}
         image={data?.img}
