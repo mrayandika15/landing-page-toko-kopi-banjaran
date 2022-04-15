@@ -32,18 +32,18 @@ const ProductDetails = ({
   const router = useRouter();
 
   return (
-    <Center w="full" py={["100px", "150px"]}>
+    <Center w="full" pt={["100px", "150px"]} pb={["100px", "50px"]}>
       <Flex
         direction={["column", "row"]}
         gap="25px"
-        w={["full", "890px"]}
+        w={["full", "1000px"]}
         px={["15px", "0px"]}
         position="relative"
       >
         <Flex
           position="absolute"
-          right={["15px", "-100px"]}
-          top={["-50px", "0px"]}
+          right={["15px", "30px"]}
+          top={["-50px", "25px"]}
           align="center"
           fontSize="md"
           textDecoration="underline"
@@ -74,7 +74,7 @@ const ProductDetails = ({
                 <Button
                   onClick={() => handleClick(index)}
                   isActive={index === indexArray}
-                  variant="primary"
+                  variant="secondary"
                 >
                   {data.type}
                 </Button>
@@ -85,7 +85,11 @@ const ProductDetails = ({
             {resource[indexArray]?.nameDetail}
           </Text>
           <Text pl="5px">{resource[indexArray]?.detailProduct}</Text>
-          <Button variant="primary" isActive>
+          <Button
+            variant="primary"
+            isActive
+            onClick={() => router.push("/promo")}
+          >
             Beli Produk ini
           </Button>
         </VStack>

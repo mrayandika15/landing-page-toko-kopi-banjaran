@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 const SectionHeader = () => {
   return (
     <Element id="about" name="about">
-      <Flex justify="center" w="full">
+      <Flex justify="center" w="full" mt="20px" mb="60px">
         <Box
           w={["full", "1667px"]}
           h="fit-content"
@@ -20,14 +20,17 @@ const SectionHeader = () => {
             h={["61px", "134px"]}
           />
 
-          <Text fontSize={["sm", "md"]} pt={["0", "5px"]}>
-            Toko Kopi Banjaran adalah sebuah toko kopi yang menyediakan ruang
-            edukasi dan ruang interaksi dalam industri kopi di Kabupaten
-            Bandung. Kami menyediakan beragam biji dan bubuk kopi dengan nama
-            Kopi BJR dan Kopi Cap Kretek. Selain itu, kami pun menyediakan
-            produk minuman kopi untuk dinikmati di tempat serta peralatan seduh
-            kopi rumahan.
-          </Text>
+          <Flex justify={"center"} direction="column" h={["350px", "134px"]}>
+            <Text fontSize={["lg", "xl"]} pt={["0", "5px"]}>
+              Toko Kopi Banjaran adalah sebuah toko kopi yang menyediakan ruang
+              Toko Kopi Banjaran adalah sebuah toko kopi yang menyediakan ruang
+              edukasi dan ruang interaksi dalam industri kopi di Kabupaten
+              Bandung. Kami menyediakan beragam biji dan bubuk kopi dengan nama
+              Kopi BJR dan Kopi Cap Kretek. Selain itu, kami pun menyediakan
+              produk minuman kopi untuk dinikmati di tempat serta peralatan
+              seduh kopi rumahan.
+            </Text>
+          </Flex>
         </Box>
       </Flex>
     </Element>

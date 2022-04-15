@@ -37,8 +37,20 @@ const ProductOverview = () => {
         justify={["center", "center"]}
         alignItems={["center", "center"]}
         px="20px"
+        background="/assets/img/UI/Background_Produk_Kami.png"
+        bgImg="/assets/img/UI/Background_Produk_Kami.png"
+        backgroundSize="cover"
+        backgroundPosition="center"
+        backgroundRepeat="no-repeat"
+        h="fit-content"
+        w="full"
       >
-        <Text fontSize={["30"]} textDecoration="underline" fontWeight="bold">
+        <Text
+          fontSize={["60px"]}
+          textDecoration="underline"
+          fontWeight="bold"
+          mt={"35px"}
+        >
           Produk Kami
         </Text>
 

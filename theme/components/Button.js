@@ -11,5 +11,14 @@ export const Button = {
         color: "white",
       },
     },
+    secondary: {
+      bg: "white",
+      color: "primary",
+      boxShadow: "lg",
+      _active: {
+        bg: "primary",
+        color: "white",
+      },
+    },
   },
 };
