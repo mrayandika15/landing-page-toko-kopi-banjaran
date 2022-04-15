@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <Flex w="full" h="fit-content" direction="column">
       <Center w="full">
-        <Flex w="full" mx="45px" h="2px" bg="black" />
+        <Flex w="full" mx={["25px", "45px"]} h="2px" bg="black" />
       </Center>
 
       <Flex direction={["column", "row"]} w="full" h="fit-content" p="4">
@@ -39,7 +39,7 @@ const Footer = () => {
             h="auto"
           />
 
-          <Text fontSize={["15.42", "15.83"]} w="341.44px" textAlign="justify">
+          <Text fontSize={["15.42", "15.83"]} w="341.44px">
             Jalan Babakan Stasion No. 2 Banjaran, Kecamatan Banjaran, Kabupaten
             Bandung, Jawa Barat 40377, Indonesia
           </Text>

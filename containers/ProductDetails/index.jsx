@@ -32,7 +32,7 @@ const ProductDetails = ({
   const router = useRouter();
 
   return (
-    <Center w="full" pt={["100px", "150px"]} pb={["100px", "50px"]}>
+    <Center w="full" pt={["120px", "150px"]} pb={["50px", "50px"]}>
       <Flex
         direction={["column", "row"]}
         gap="25px"
@@ -57,11 +57,11 @@ const ProductDetails = ({
         </Flex>
 
         <Center>
-          <Image src={image} alt={altImage} w={["350px", "910px"]} h="auto" />
+          <Image src={image} alt={altImage} w={["180px", "910px"]} h="auto" />
         </Center>
         <VStack spacing={["15px", "12px"]} align="start">
           <Text
-            fontSize={["3xl", "4xl"]}
+            fontSize={["4xl", "4xl"]}
             fontWeight="bold"
             textDecoration="underline"
             pl="5px"

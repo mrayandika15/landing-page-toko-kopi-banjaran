@@ -14,7 +14,18 @@ const LocationDetails = () => {
         position="absolute"
         zIndex="hide"
         height="1100px"
+        width="100%"
+        display={["none", "block"]}
       />
+      <Image
+        src="/assets/img/UI/BGMobile_Lokasi.png"
+        position="absolute"
+        zIndex="hide"
+        height="900px"
+        width="100%"
+        display={["block", "none"]}
+      />
+
       <DesktopView resource={LocationData} />
       <MobileView resource={LocationData} />
     </Element>

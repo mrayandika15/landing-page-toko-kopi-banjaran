@@ -17,20 +17,36 @@ const PromoSection = ({ resource }) => {
         />
         <VStack align="start" justify="center">
           <Text
-            fontSize={["xl", "5xl"]}
+            fontSize={["4xl", "5xl"]}
             fontWeight="bold"
-            align={["left"]}
+            align={["center", "left"]}
             w={["full", "auto"]}
           >
             Selamat Datang <br />
             Di Toko Kopi Banjaran
           </Text>
-          <Text align={["center", "start"]} fontStyle="italic">
-            {resource?.subHeader}
+          <Text
+            align={["center", "start"]}
+            fontStyle="italic"
+            w={["full", "auto"]}
+            pb="25px"
+            display={["block", "none"]}
+          >
+            Silahkan pesan produk kami <br /> melalui beberapa platform di bawah
+            ini
+          </Text>
+          <Text
+            align={["center", "start"]}
+            fontStyle="italic"
+            w={["full", "auto"]}
+            pb="25px"
+            display={["none", "block"]}
+          >
+            Silahkan pesan produk kami melalui beberapa platform di bawah ini
           </Text>
           <Flex
             direction={["column", "row"]}
-            gap="6px"
+            gap={["25px", "6px"]}
             flexWrap="wrap"
             alignItems={["center", "start"]}
             w={["full", "auto"]}
@@ -40,6 +56,7 @@ const PromoSection = ({ resource }) => {
                 <Button
                   _hover={{ background: data.color, color: "white" }}
                   key={index}
+                  w={["120px", "auto"]}
                 >
                   {data.name}
                 </Button>
