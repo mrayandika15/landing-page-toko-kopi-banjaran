@@ -5,6 +5,8 @@ import { Image } from "@chakra-ui/react";
 import style from "./Navbar.module.css";
 import Sidebar from "../Sidebar";
 
+import router from "next/router";
+
 const NavMobile = ({ color }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -22,6 +24,10 @@ const NavMobile = ({ color }) => {
     iconColor.push(style.white);
   }
 
+  const handleClick = () => {
+    router.push("/");
+  };
+
   return (
     <HStack
       justify="space-between"
@@ -34,7 +40,7 @@ const NavMobile = ({ color }) => {
         <GiHamburgerMenu className={iconColor} onClick={onOpen} />
       </Box>
 
-      <Box>
+      <Box onClick={handleClick}>
         <Image
           src={imageSrc}
           alt="logo"

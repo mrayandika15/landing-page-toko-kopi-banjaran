@@ -1,6 +1,8 @@
 import { Flex } from "@chakra-ui/react";
 import { Footer, Navbar } from "../../containers";
 
+import { ButtonScrollTop } from "../../components";
+
 import { motion } from "framer-motion";
 
 const Main = ({ children, navbarColor, isHomePage }) => {
@@ -14,7 +16,10 @@ const Main = ({ children, navbarColor, isHomePage }) => {
       initial={{ opacity: 0.5 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0.5 }}
+      position="relative"
     >
+      <ButtonScrollTop />
+
       <Navbar color={navbarColor} isHomePage={isHomePage} />
 
       {children}
