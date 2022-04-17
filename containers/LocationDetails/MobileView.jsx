@@ -14,7 +14,7 @@ const MobileView = ({ resource }) => {
   return (
     <VStack gap="10px" display={["flex", "none"]} mt={["40px", "0px"]}>
       <Center>
-        <Text fontSize={["60px"]} textDecoration="underline" fontWeight="bold">
+        <Text fontSize={["45px"]} textDecoration="underline" fontWeight="bold">
           {resource.header}
         </Text>
       </Center>

@@ -61,7 +61,7 @@ const ProductOverview = () => {
           display={["block", "none"]}
         />
         <Text
-          fontSize={["60px"]}
+          fontSize={["45px", "60px"]}
           textDecoration="underline"
           fontWeight="bold"
           mt={"35px"}
