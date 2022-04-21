@@ -9,24 +9,24 @@ import { Main } from "../layouts";
 import { useState, useEffect } from "react";
 
 const index = () => {
-  const [playing, setPlaying] = useState(false);
+  const [playing, SetPlaying] = useState(false);
 
-  const [show, setShow] = useState(false);
+  const [show, SetShow] = useState(false);
 
   useEffect(() => {
     if (playing) {
-      setShow(false);
+      SetShow(false);
     } else {
-      setShow(true);
+      SetShow(true);
     }
   }, [playing]);
 
   return (
     <Main navbarColor="white" isHomePage playing={playing} navShow={show}>
       <Video
-        setPlaying={(set) => setPlaying(set)}
+        setPlaying={(set) => SetPlaying(set)}
         playing={playing}
-        setShow={(set) => setShow(set)}
+        setShow={(set) => SetShow(set)}
       />
       <SectionHeader />
       <ProductOverview />
