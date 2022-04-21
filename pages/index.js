@@ -8,7 +8,7 @@ import { Main } from "../layouts";
 
 import { useState, useEffect } from "react";
 
-const index = () => {
+const Index = () => {
   const [playing, SetPlaying] = useState(false);
 
   const [show, SetShow] = useState(false);
@@ -35,4 +35,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
