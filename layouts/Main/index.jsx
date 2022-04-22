@@ -1,11 +1,11 @@
 import { Flex } from "@chakra-ui/react";
 import { Footer, Navbar } from "../../containers";
 
-import { ButtonScrollTop } from "../../components";
+import { ButtonScrollTop, Loading } from "../../components";
 
 import { motion } from "framer-motion";
 
-const Main = ({ children, navbarColor, isHomePage }) => {
+const Main = ({ children, navbarColor, isHomePage, playing, navShow }) => {
   return (
     <Flex
       direction="column"
@@ -20,7 +20,12 @@ const Main = ({ children, navbarColor, isHomePage }) => {
     >
       <ButtonScrollTop />
 
-      <Navbar color={navbarColor} isHomePage={isHomePage} />
+      <Navbar
+        color={navbarColor}
+        isHomePage={isHomePage}
+        playing={playing}
+        show={navShow}
+      />
 
       {children}
 

@@ -29,6 +29,7 @@ const CustomCarousel = ({ resource }) => {
         stopOnHover
         dynamicHeight={false}
         className={style.carousel__wrapper}
+        interval="2000"
       >
         {resource.map((slider, index) => (
           <Flex w="full" h="450px" justifyContent="center" alignItems="center">

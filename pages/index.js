@@ -6,10 +6,28 @@ import {
 } from "../containers";
 import { Main } from "../layouts";
 
-const index = () => {
+import { useState, useEffect } from "react";
+
+const Index = () => {
+  const [playing, SetPlaying] = useState(false);
+
+  const [show, SetShow] = useState(false);
+
+  useEffect(() => {
+    if (playing) {
+      SetShow(false);
+    } else {
+      SetShow(true);
+    }
+  }, [playing]);
+
   return (
-    <Main navbarColor="white" isHomePage>
-      <Video />
+    <Main navbarColor="white" isHomePage playing={playing} navShow={show}>
+      <Video
+        setPlaying={(set) => SetPlaying(set)}
+        playing={playing}
+        setShow={(set) => SetShow(set)}
+      />
       <SectionHeader />
       <ProductOverview />
       <LocationDetails />
@@ -17,4 +35,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
