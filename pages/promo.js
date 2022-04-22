@@ -5,7 +5,7 @@ import { SliderData, PromoData } from "../data";
 
 const Promo = () => {
   return (
-    <Main navbarColor="white" isHomePage={false}>
+    <Main navbarColor="white" isHomePage={false} playing={true} navShow={true}>
       <CustomCarousel resource={SliderData} />
       <PromoSection resource={PromoData} />
     </Main>

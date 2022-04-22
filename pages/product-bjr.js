@@ -4,7 +4,7 @@ import { Main } from "../layouts";
 
 const ProductBjr = ({ data }) => {
   return (
-    <Main navbarColor="black" isHomePage={false}>
+    <Main navbarColor="black" isHomePage={false} playing={true} navShow={true}>
       <Image
         src="assets/img/UI/BJRBackground.png"
         position="absolute"

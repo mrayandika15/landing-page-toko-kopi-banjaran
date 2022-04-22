@@ -4,7 +4,7 @@ import { Image } from "@chakra-ui/react";
 
 const CapKretek = ({ data }) => {
   return (
-    <Main navbarColor="black" isHomePage={false}>
+    <Main navbarColor="black" isHomePage={false} playing={true} navShow={true}>
       <Image
         src="/assets/img/UI/Background_Produk_Kami.png"
         position="absolute"
