@@ -36,9 +36,18 @@ const CustomCarousel = ({ resource }) => {
             <Box
               width={["350px", "900px"]}
               height={["250px", "300px"]}
-              bgImage="/assets/img/UI/BannerPromo.png"
+              bgImage={[
+                "/assets/img/UI/Mobile_Banner.png",
+                "/assets/img/UI/BannerPromo.png",
+              ]}
               bgSize="contain"
               mt={["0px", "45px"]}
+              cursor="pointer"
+              onClick={() =>
+                window.open(
+                  "https://api.whatsapp.com/send/?phone=6281214636060&text&app_absent=0"
+                )
+              }
             ></Box>
           </Flex>
         ))}

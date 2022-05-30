@@ -5,37 +5,31 @@ export const Bjr = {
   name: "Kopi BJR™",
   varian: "5 varian",
   whatNext: "Kopi Cap Kretek",
-  whatNextSrc: "/product-cap-kretek",
+  whatNextSrc: "/kopicapkretek",
   detail: [
     {
       type: "Natural",
-      nameDetail: "Kopi BJR Natural",
+      nameDetail: "Kopi BJR™ Natural (Rp375.000/kg)",
       detailProduct:
-        "Kopi BJR™ merupakan produk kopi rumahan dari Bandung Selatan yang memanfaatkan eksotisme tanah priangan. Kopi BJR hadir di tengah-tengah para penikmat kopi varietas kopi-kopi Sunda dengan cita rasanya yang khas. Menggunakan biji-biji kopi spesifik, Kopi BJR dikemas dalam kemasan ergonomis kedap udara anti-mikrobial yang membuat cita rasa kopi stabil.",
+        "Kopi BJR™ Natural adalah biji kopi khas Banjaran yang mempunyai cita rasa manis dan keasaman buah-buahan tropis dengan tingkat keasaman yang lebih ringan.",
     },
     {
       type: "Fullwash",
-      nameDetail: "Kopi BJR Fullwash",
+      nameDetail: "Kopi BJR™ Fullwash (Rp280.000/kg)",
       detailProduct:
-        "Kopi BJR™ merupakan produk kopi rumahan dari Bandung Selatan yang memanfaatkan eksotisme tanah priangan. Kopi BJR hadir di tengah-tengah para penikmat kopi varietas kopi-kopi Sunda dengan cita rasanya yang khas. Menggunakan biji-biji kopi spesifik, Kopi BJR dikemas dalam kemasan ergonomis kedap udara anti-mikrobial yang membuat cita rasa kopi stabil.",
-    },
-    {
-      type: "Robusta",
-      nameDetail: "Kopi BJR Robusta",
-      detailProduct:
-        "Kopi BJR™ merupakan produk kopi rumahan dari Bandung Selatan yang memanfaatkan eksotisme tanah priangan. Kopi BJR hadir di tengah-tengah para penikmat kopi varietas kopi-kopi Sunda dengan cita rasanya yang khas. Menggunakan biji-biji kopi spesifik, Kopi BJR dikemas dalam kemasan ergonomis kedap udara anti-mikrobial yang membuat cita rasa kopi stabil.",
+        "Kopi BJR™ Fullwash merupakan biji kopi dengan body (kekentalan) yang ringan serta tingkat asam & pahit yang seimbang.",
     },
     {
       type: "Wine",
-      nameDetail: "Kopi BJR Wine",
+      nameDetail: "Kopi BJR™ Wine (Rp400.000/kg)",
       detailProduct:
-        "Kopi BJR™ merupakan produk kopi rumahan dari Bandung Selatan yang memanfaatkan eksotisme tanah priangan. Kopi BJR hadir di tengah-tengah para penikmat kopi varietas kopi-kopi Sunda dengan cita rasanya yang khas. Menggunakan biji-biji kopi spesifik, Kopi BJR dikemas dalam kemasan ergonomis kedap udara anti-mikrobial yang membuat cita rasa kopi stabil.",
+        "Kopi BJR™ Wine merupakan biji kopi yang memiliki aroma asam serta tingkat keasaman lebih tinggi hingga rasa pahit tidak terlalu dominan.",
     },
     {
       type: "Honey",
-      nameDetail: "Kopi BJR Honey",
+      nameDetail: "Kopi BJR™ Honey (Rp330.000/kg)",
       detailProduct:
-        "Kopi BJR™ merupakan produk kopi rumahan dari Bandung Selatan yang memanfaatkan eksotisme tanah priangan. Kopi BJR hadir di tengah-tengah para penikmat kopi varietas kopi-kopi Sunda dengan cita rasanya yang khas. Menggunakan biji-biji kopi spesifik, Kopi BJR dikemas dalam kemasan ergonomis kedap udara anti-mikrobial yang membuat cita rasa kopi stabil.",
+        "Kopi BJR™ Honey memiliki karakteristik rasa manis yang tinggi dan tingkat keasaman yang seimbang.",
     },
   ],
 };

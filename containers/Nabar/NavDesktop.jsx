@@ -107,7 +107,7 @@ const NavDesktop = ({ color, isHomePage, playing, show }) => {
                   </NextLink>
                 )}
 
-                <NextLink href="/promo">
+                <NextLink href="/beliproduk">
                   <Link className={style.link}>Promo</Link>
                 </NextLink>
               </HStack>

@@ -1,12 +1,12 @@
+import { Image } from "@chakra-ui/react";
 import { ProductDetails } from "../containers";
 import { Main } from "../layouts";
-import { Image } from "@chakra-ui/react";
 
-const CapKretek = ({ data }) => {
+const KopiBjr = ({ data }) => {
   return (
     <Main navbarColor="black" isHomePage={false} playing={true} navShow={true}>
       <Image
-        src="/assets/img/UI/Background_Produk_Kami.png"
+        src="assets/img/UI/BJRBackground.png"
         position="absolute"
         inset="0px"
         height="100%"
@@ -29,10 +29,10 @@ export async function getServerSideProps({ req }) {
   const protocol = req.headers["x-forwarded-proto"] || "http";
   const baseUrl = req ? `${protocol}://${req.headers.host}` : "";
 
-  const res = await fetch(baseUrl + `/api/product/cap-kretek`);
+  const res = await fetch(baseUrl + `/api/product/bjr`);
   const data = await res.json();
 
   return { props: { data } };
 }
 
-export default CapKretek;
+export default KopiBjr;

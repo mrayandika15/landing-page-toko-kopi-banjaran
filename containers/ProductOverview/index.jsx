@@ -22,11 +22,11 @@ const ProductOverview = () => {
 
   const handleClickDetail = () => {
     if (ProductActive.ProductBjrActive === true) {
-      router.push("/product-bjr");
+      router.push("/kopibjr");
     }
 
     if (ProductActive.ProductCapKretekActive === true) {
-      router.push("/product-cap-kretek");
+      router.push("/kopicapkretek");
     }
   };
 

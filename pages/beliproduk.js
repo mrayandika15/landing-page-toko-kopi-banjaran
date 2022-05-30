@@ -3,7 +3,7 @@ import { Main } from "../layouts";
 
 import { SliderData, PromoData } from "../data";
 
-const Promo = () => {
+const BeliProduk = () => {
   return (
     <Main navbarColor="white" isHomePage={false} playing={true} navShow={true}>
       <CustomCarousel resource={SliderData} />
@@ -12,4 +12,4 @@ const Promo = () => {
   );
 };
 
-export default Promo;
+export default BeliProduk;

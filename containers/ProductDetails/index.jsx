@@ -39,6 +39,8 @@ const ProductDetails = ({
         w={["full", "1000px"]}
         px={["15px", "0px"]}
         position="relative"
+        flexGrow={0}
+        flexShrink={0}
       >
         <Flex
           position="absolute"
@@ -57,9 +59,22 @@ const ProductDetails = ({
         </Flex>
 
         <Center>
-          <Image src={image} alt={altImage} w={["180px", "910px"]} h="auto" />
+          <Image
+            src={image}
+            alt={altImage}
+            w={["180px", "399.72px"]}
+            h="auto"
+            flexGrow={0}
+            flexShrink={0}
+          />
         </Center>
-        <VStack spacing={["15px", "12px"]} align="start">
+        <VStack
+          spacing={["15px", "12px"]}
+          align="start"
+          flexGrow="0"
+          width={["auto", "1000px"]}
+          justify={["start", "center"]}
+        >
           <Text
             fontSize={["4xl", "4xl"]}
             fontWeight="bold"

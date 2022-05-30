@@ -33,7 +33,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     },
     {
       name: "Promo",
-      link: "/promo",
+      link: "/beliproduk",
     },
   ];
 
