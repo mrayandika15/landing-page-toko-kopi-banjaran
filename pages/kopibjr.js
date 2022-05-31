@@ -1,10 +1,14 @@
 import { Image } from "@chakra-ui/react";
+import Head from "next/head";
 import { ProductDetails } from "../containers";
 import { Main } from "../layouts";
 
 const KopiBjr = ({ data }) => {
   return (
     <Main navbarColor="black" isHomePage={false} playing={true} navShow={true}>
+      <Head>
+        <title>Kopi BJR | Toko Kopi Banjaran</title>
+      </Head>
       <Image
         src="assets/img/UI/BJRBackground.png"
         position="absolute"

@@ -103,7 +103,7 @@ const ProductDetails = ({
           <Button
             variant="primary"
             isActive
-            onClick={() => router.push("/promo")}
+            onClick={() => router.push("/beliproduk")}
           >
             Beli Produk ini
           </Button>

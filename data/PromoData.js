@@ -7,14 +7,17 @@ export const PromoData = {
     {
       name: "Tokopedia",
       color: "#44C444",
+      link: "https://www.tokopedia.com/tokokopibjr",
     },
     {
       name: "Shopee",
       color: "#F7432E",
+      link: "https://shopee.co.id/tokokopibanjaran",
     },
     {
       name: "WhatsApp",
       color: "#44C444",
+      link: "https://api.whatsapp.com/send/?phone=6281214636060&text&app_absent=0",
     },
     {
       name: "Lokasi Toko",

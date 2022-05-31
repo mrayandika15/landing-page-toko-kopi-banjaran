@@ -7,6 +7,7 @@ import {
 import { Main } from "../layouts";
 
 import { useState, useEffect } from "react";
+import Head from "next/head";
 
 const Index = () => {
   const [playing, SetPlaying] = useState(false);
@@ -23,6 +24,9 @@ const Index = () => {
 
   return (
     <Main navbarColor="white" isHomePage playing={playing} navShow={show}>
+      <Head>
+        <title>Toko Kopi Banjaran | Oleh-oleh khas Banjaran</title>
+      </Head>
       <Video
         setPlaying={(set) => SetPlaying(set)}
         playing={playing}

@@ -57,6 +57,7 @@ const PromoSection = ({ resource }) => {
                   _hover={{ background: data.color, color: "white" }}
                   key={index}
                   w={["120px", "auto"]}
+                  onClick={() => window.open(data.link)}
                 >
                   {data.name}
                 </Button>

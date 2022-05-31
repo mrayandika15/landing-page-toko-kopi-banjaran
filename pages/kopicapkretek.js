@@ -5,6 +5,9 @@ import { Image } from "@chakra-ui/react";
 const KopiCapKretek = ({ data }) => {
   return (
     <Main navbarColor="black" isHomePage={false} playing={true} navShow={true}>
+      <Head>
+        <title> Kopi Cap Kretek | Toko Kopi Banjaran</title>
+      </Head>
       <Image
         src="/assets/img/UI/Background_Produk_Kami.png"
         position="absolute"
