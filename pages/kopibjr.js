@@ -1,7 +1,7 @@
 import { Image } from "@chakra-ui/react";
-import Head from "next/head";
 import { ProductDetails } from "../containers";
 import { Main } from "../layouts";
+import Head from "next/head";
 
 const KopiBjr = ({ data }) => {
   return (
