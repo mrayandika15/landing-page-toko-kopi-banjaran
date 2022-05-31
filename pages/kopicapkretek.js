@@ -1,6 +1,7 @@
 import { ProductDetails } from "../containers";
 import { Main } from "../layouts";
 import { Image } from "@chakra-ui/react";
+import Head from "next/head";
 
 const KopiCapKretek = ({ data }) => {
   return (
