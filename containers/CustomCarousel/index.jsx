@@ -31,18 +31,16 @@ const CustomCarousel = ({ resource }) => {
         className={style.carousel__wrapper}
         interval="2000"
       >
-        {resource.map((slider, index) => (
+        {resource.map((data, index) => (
           <Flex w="full" h="450px" justifyContent="center" alignItems="center">
             <Box
               width={["350px", "900px"]}
               height={["250px", "300px"]}
-              bgImage={[
-                "/assets/img/UI/Mobile_Banner.png",
-                "/assets/img/UI/BannerPromo.png",
-              ]}
+              bgImage={[data?.imageMobile, data?.image]}
               bgSize="contain"
               mt={["0px", "45px"]}
               cursor="pointer"
+              key={index}
               onClick={() =>
                 window.open(
                   "https://api.whatsapp.com/send/?phone=6281214636060&text&app_absent=0"
