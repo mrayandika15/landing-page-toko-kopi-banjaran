@@ -180,7 +180,7 @@ const ProductOverview = () => {
 
             <Flex justify={["flex-end", "flex-start"]} w="full" py="20px">
               <Button onClick={handleClickDetail} variant="primary" isActive>
-                Selegkapnya
+                Selengkapnya
               </Button>
             </Flex>
           </Flex>
